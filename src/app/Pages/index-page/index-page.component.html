@@ -1,0 +1,125 @@
+<section class="index-page-section">
+    <app-header />
+    <main class="index-page-main_">
+        <!-- Home Page banners---------------------------------- -->
+        <div class="index-page-banners_">
+            <swiper-container autoplay="true" navigate="true" slides-per-view="1" speed="500" loop="true"
+                css-mode="true">
+                <swiper-slide *ngFor="let item of banners">
+                    <div class="banner-wrapper_">
+                        <img [lazyLoad]="item.url" alt="Lazy Loaded Image" class="baner-image_" />
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+        <!-- Game cards swiper-------------------------------- -->
+        <div class="game-cards-swiper_">
+            <div class="game-cards-swiper-header_">
+                <div class="gamecards-type_"> <span>🔥</span>Treding Now</div>
+                <div class="swiper-actions_">
+                    <div class="gamescard-swiper-action-button_"><span class="material-icons">keyboard_arrow_left</span>
+                    </div>
+                    <div class="gamescard-swiper-action-button_"> <span
+                            class="material-icons">keyboard_arrow_right</span></div>
+                </div>
+            </div>
+            <div class="game-cards-swiper-container_">
+                <swiper-container navigate="true" space-between="10" slides-per-view="3.4" speed="500" loop="true"
+                    css-mode="true">
+                    <swiper-slide class="gamecard-slide_" *ngFor="let item of trendingNowImages">
+                        <div class="game-card-wrapper_">
+                            <img [lazyLoad]="item.url" alt="Lazy Loaded Image" class="game-card-image_" />
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </div>
+
+        <!-- exchange sports-------------------- -->
+        <div class="our-sports-cards_">
+            <div class="our-sports-cards-container_">
+                <!-- sport card-------------- -->
+                <div *ngFor="let item of sportData" class="sport-card_">
+                    <div class="sport-icon_">{{item.sportIcon}}</div>
+                    <div class="sport-name_">{{item.sportName}}</div>
+                </div>
+                <!-- sport card ------------------>
+            </div>
+        </div>
+
+
+        <!-- Providers ----------------------------------- -->
+        <div class="game-cards-swiper_">
+            <div class="game-cards-swiper-header_">
+                <div class="gamecards-type_"> <span>🔥</span>Providers</div>
+                <div class="swiper-actions_">
+                    <div class="gamescard-swiper-action-button_"><span class="material-icons">keyboard_arrow_left</span>
+                    </div>
+                    <div class="gamescard-swiper-action-button_"> <span
+                            class="material-icons">keyboard_arrow_right</span></div>
+                </div>
+            </div>
+            <div class="providers-container_">
+                <div *ngFor="let item of providerLogos" class="provider-card_">
+                    <img [lazyLoad]="item.url" alt="Lazy Loaded Image" class="provider-card-image_" />
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Exchange------------------------------ -->
+        <div class="our-exchange-section_">
+            <app-exchange></app-exchange>
+        </div>
+
+        <!-- Indian games-------------------------- -->
+        <div class="game-cards-swiper_">
+            <div class="game-cards-swiper-header_">
+                <div class="gamecards-type_"> <span>🔥</span>Indian Games</div>
+                <div class="swiper-actions_">
+                    <div class="gamescard-swiper-action-button_"><span class="material-icons">keyboard_arrow_left</span>
+                    </div>
+                    <div class="gamescard-swiper-action-button_"> <span
+                            class="material-icons">keyboard_arrow_right</span></div>
+                </div>
+            </div>
+            <div class="game-cards-swiper-container_ indian">
+                <swiper-container navigate="true" space-between="0" slides-per-view="2.3" speed="500" loop="true"
+                    css-mode="true">
+                    <swiper-slide class="gamecard-slide_" *ngFor="let item of indianGames">
+                        <div class="game-card-wrapper_ indian">
+                            <img [lazyLoad]="item.url" alt="Lazy Loaded Image" class="game-card-image_" />
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </div>
+
+        <!-- Game shows----------------------------- -->
+
+        <div class="game-cards-swiper_">
+            <div class="game-cards-swiper-header_">
+                <div class="gamecards-type_"> <span>🔥</span>Game Shows</div>
+                <div class="swiper-actions_">
+                    <div class="gamescard-swiper-action-button_"><span class="material-icons">keyboard_arrow_left</span>
+                    </div>
+                    <div class="gamescard-swiper-action-button_"> <span
+                            class="material-icons">keyboard_arrow_right</span></div>
+                </div>
+            </div>
+            <div class="game-cards-swiper-container_ shows">
+                <swiper-container navigate="true" space-between="0" slides-per-view="2.3" speed="500" loop="true"
+                    css-mode="true">
+                    <swiper-slide class="gamecard-slide_" *ngFor="let item of gameShows">
+                        <div class="game-card-wrapper_ shows">
+                            <img [lazyLoad]="item.url" alt="Lazy Loaded Image" class="game-card-image_" />
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </div>
+
+
+
+    </main>
+</section>

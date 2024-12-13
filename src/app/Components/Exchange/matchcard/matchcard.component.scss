@@ -1,0 +1,169 @@
+
+.match-card_{
+    width: 100%;
+    row-gap: .56rem;
+    border-right: 0.05px solid #24224a;
+    border-left: .5px solid #0d454a;
+    border-bottom: .5px solid #0d454a;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+.match-details-header_{
+    width: 95%;
+    margin: auto;
+    height: 2.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.match-score-and-date_{
+    height: 100%;
+    position: relative;
+    min-width: 10%;
+}
+.match-score-and-date_::after{
+   
+    content: "";
+    background: linear-gradient(180deg, #d71082, rgba(187, 2, 108, .48));
+    width: .5px;
+    border-radius: 8px;
+    height: 90%;
+    position: absolute;
+    right:-2px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.score_{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.total-over_,.over_,.total-score_{
+    font-size: 10.5px;
+    text-align: center;
+    padding-right:5px;
+    line-height: 13px;
+}
+.total-over_,.over_{
+    color: #b6becd;
+}
+.total-score_{
+    color: #1fa653;
+}
+
+// fot the date time
+.date-time_{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+.date_,.time_{
+    text-align: center;
+    font-size: 10.5px;
+    color: #b6becd;
+    font-weight: bold;
+}
+.time_{
+    margin-top: 2px;
+    font-size: 11px;
+}
+.match-teams-info_{
+    width: 75%;
+   padding-left: 3px;
+   box-sizing: border-box;
+}
+
+.team_{
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 20px;
+}
+.match-tv-and-point_{
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+.point_{
+    width: 10px;
+    height: 10px;
+    background-color: #dc2626;
+    margin-right: 5px;
+    border-radius: 50%;
+    animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: .5;
+        filter: blur(1px);
+    }
+}
+
+// Match odds row styling --------------
+.match-odds-row_{
+    width: 100%;
+    margin-top: 5px;
+}
+.match-odds-row-container_{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.match-odds-box_{
+    width: 32%;
+    height: 35px;
+    max-height: 35px;
+    position: relative;
+}
+.match-odds-box-container_{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.back-odd_,.lay-odd_{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    font-weight: bold;
+}
+.back-odd_{
+    border-top-left-radius: .375rem;
+    border-bottom-left-radius: .375rem;
+   background:  linear-gradient(115deg, rgba(95, 168, 238, .9), rgba(144, 195, 244, .9) 52.26%, rgba(186, 221, 255, .9) 101.35%);
+}
+.lay-odd_{
+    border-top-right-radius: .375rem;
+    border-bottom-right-radius: .375rem;
+   background: linear-gradient(245deg, rgba(240, 146, 173, .9) -.45%, rgba(252, 170, 193, .9) 48.62%, rgba(255, 208, 222, .9) 99.78%);
+}
+.odd-label_{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+}

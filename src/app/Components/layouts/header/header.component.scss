@@ -1,0 +1,98 @@
+
+@use '../../../../styles/Colors.scss' as vars;
+
+.main-header_{
+    width: 100%;
+    padding:10px 0px 10px 0px;
+    background-color: vars.$main-header-color;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99999;
+}
+.main-nav_{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-left_{
+    display: flex;
+    align-items: center;
+}
+.header-logo_{
+    width: 100px;
+    height: 30px;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+.auth-actions{
+    display: flex;
+    align-items: center;
+}
+.auth-action{
+   padding: 7px 9px 7px 9px;
+    border-radius: 6px;
+    border: none;
+    margin-left: 10px;
+    outline: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+}
+.auth-action.login{
+    background:linear-gradient(#c0359d,#8f05bd);
+}
+.auth-action.register{
+    background: linear-gradient(#059a47,#2cc168);
+}
+
+
+.routing-tabs_{
+    width: 100%;
+    border-top: 0.5px solid #ffffff1a;
+    margin-top: 7px;
+    position: relative;
+}
+.routing-tabs-container_{
+    width: 97%;
+    max-width: 97%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+.routing-tabs-container_::-webkit-scrollbar{
+    display: none;
+}
+.tab_{
+    font-size: 13px;
+    font-weight: 600;
+    color:#989d9f;
+    margin: 8px 4px 0px 4px;
+    text-wrap: nowrap;
+    text-transform: capitalize;
+}
+
+.down-icon-wrapper_{
+    width: 21px;
+    height: 21px;
+    border-radius: 6px;
+    background-color: #d71082;
+    position: absolute;
+    right: 2px;
+    bottom: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+
+    span{
+        font-size: 20px !important;
+        color: #fff !important;
+    }
+}

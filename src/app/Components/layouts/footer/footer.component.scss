@@ -1,0 +1,203 @@
+.footer_{
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+.footer-header{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #112856
+}
+.footer-header-left{
+    display: flex;
+}
+.side-logo{
+    height: 34px;
+    width: 100px;
+}
+.side-footer-header-right{
+    display: flex;
+    align-items: center;
+}
+.links_{
+    display: flex;
+    align-content: center;
+}
+.footer-link_{
+    font-size: 13px;
+    text-decoration: none;
+    padding: 0px 6px;
+    color: #B6BECD;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase !important;
+}
+.player-age_{
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: #617293;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 11px;
+}
+
+
+.social-accounts_{
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #112856;
+}
+.social-heading_{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #B6BECD;
+}
+.social-actions_{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.social-action_{
+    width: 113px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .375rem;
+}
+.social-action_.telegram{
+    background-color: #039be5;
+}
+.social-action_.instagram{
+    background-image: linear-gradient(100deg, #fbd823 -15.39%, #fe3383 38.47%, #7e1cc6 102.12%);
+}
+.social-action_.facebook{
+    background-color: #5176bf;
+}
+
+
+// Resources---------------------
+.download-app-resources_{
+    width: 100%;
+    margin-top: 12px;
+    padding-bottom: 12px;
+}
+.resources-container_{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 10px;
+}
+.resource_{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) -0.34%, rgba(222, 44, 162, 0.3) 112.2%);
+    border: 1px solid #112856;
+    border-radius: 10px;
+}
+.resource-container_{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.resource-left_{
+    display: flex;
+    align-items: center;
+}
+.recource-icon_{
+    width: 45px;
+    height: 45px;
+   margin: 2px;
+   border-radius: 10px;
+}
+.resource-details_{
+    margin-left: 4px;
+}
+.download-heading{
+    font-size: 12.5px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+}
+.resource-type_{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+
+// Platform details ----------------------
+.gaming-platform-details_{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.gaming-platform-logo_{
+    width: 100px;
+    height: 32px;
+}
+.platform-message_{
+    width: 100%;
+    text-align: center;
+    color: #929eb5;
+    font-size: .625rem;
+    line-height: .875rem;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+// payment getways styling --------------
+.payment-getways_{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border-top: 1px solid #112856;
+    border-bottom: 1px solid #112856;
+}
+.payment-getways_::-webkit-scrollbar{
+    display: none;
+}
+.getway-logo_{
+    width: auto;
+    height: 20px;
+    max-width: 200px;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    object-fit: fill;
+}
+
+// copy right message
+.copy-right-message_{
+    width: 100%;
+    margin-top: 12px;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+}

@@ -1,0 +1,23 @@
+<header class="main-header_">
+    <nav class="main-nav_">
+        <div class="nav-left_">
+            <img  [lazyLoad]="headerIcons.HeaderLogo"
+                alt="Lazy Loaded Image"
+                class="header-logo_" />
+        </div>
+        <div class="nav-right">
+           <div class="auth-actions">
+            <button class="auth-action login">login</button>
+            <button class="auth-action register">register</button>
+           </div>
+        </div>
+    </nav>
+    <div class="routing-tabs_">
+        <div class="routing-tabs-container_">
+            <div *ngFor="let tab of headerTabs" class="tab_">{{tab}}</div>
+        </div>
+        <div class="down-icon-wrapper_">
+            <span class="material-icons">keyboard_arrow_down</span>
+        </div>
+    </div>
+</header>

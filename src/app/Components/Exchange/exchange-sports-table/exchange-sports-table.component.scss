@@ -1,0 +1,98 @@
+.exchange-sports-table_ {
+    width: 99%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.sports-table-header_ {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+    /* Semi-transparent purple background */
+    position: relative;
+    overflow: hidden;
+    /* Ensures child elements don't overflow the rounded corners */
+}
+.sports-name-and-icon_ {
+    border-top-left-radius: .75rem;
+    padding: .375rem;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
+}
+
+.vector-polygon_ {
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    right: 0px;
+}
+// Dynamic colors --------------------------
+.sports-table-header_.cricket{
+    background: rgba(67, 26, 76, 1);
+}
+.sports-name-and-icon_.cricket{
+    background: linear-gradient(90deg, rgb(79 29 75), rgb(79 29 75));
+}
+.vector-polygon_.cricket{
+    background: rgb(53, 19, 78, 1);
+}
+
+.sports-table-header_.football{
+   background: rgba(18,86,38,1);
+}
+.sports-name-and-icon_.football{
+    background: linear-gradient(90deg, #649351, #388a30);
+}
+.vector-polygon_.football{
+    background: #0c3e1b;
+}
+
+
+.sports-table-header_.tennis{
+    background: #664d18;
+ }
+ .sports-name-and-icon_.tennis{
+     background: linear-gradient(90deg,#8c884b,#ac9310);
+ }
+ .vector-polygon_.tennis{
+     background: #563f15;
+ }
+t
+
+
+
+
+
+
+
+
+
+
+.sport-icon_ {
+    margin-top: -1.5px;
+}
+
+.sport-name_ {
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.totalMatchesBox_ {
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+}

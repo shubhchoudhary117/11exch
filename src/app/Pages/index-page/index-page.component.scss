@@ -1,0 +1,195 @@
+.index-page-section {
+    width: 100%;
+    
+}
+
+.index-page-main_ {
+    width: 97%;
+    margin: auto;
+}
+
+.index-page-banners_ {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.banner-wrapper_ {
+    width: 100%;
+    margin: auto;
+    height: 179px;
+}
+
+.baner-image_ {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.mySwiper {
+    width: 100%;
+    height: 100%;
+
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//   Other game card swipers------------------------
+.game-cards-swiper_ {
+    width: 100%;
+    margin-top: 13px;
+}
+
+.game-cards-swiper-header_ {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gamecards-type_ {
+    font-size: 14px;
+    color: #989d9f;
+    font-weight: bolder !important;
+    text-transform: uppercase;
+
+    span {
+        font-size: 16px !important;
+    }
+}
+
+.game-cards-swiper-container_ {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.game-card-wrapper_ {
+    width: 102px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-card-image_ {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+
+.swiper-actions_ {
+    display: flex;
+    align-items: center;
+}
+
+.gamescard-swiper-action-button_ {
+    width: 22px;
+    height: 22px;
+    background-color: #42567e;
+    position: relative;
+    border-radius: 4px;
+    margin: 0px 0px 0px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    span {
+        font-size: 19px !important;
+        color: #fff !important;
+        position: absolute;
+
+    }
+}
+
+.our-sports-cards_ {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.our-sports-cards-container_ {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    gap: 5px;
+}
+
+.sport-card_ {
+    min-width: 65px;
+    min-height: 65px;
+    border-radius: .25rem;
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4px;
+    border: 1px solid #ffffff1a;
+}
+
+.sport-name_ {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    max-width: 95%;
+
+}
+
+
+// Provider cards styling-----------------
+.providers-container_{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+.provider-card_{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e293b;
+    border-radius: 6px;
+    line-height: 1.5rem;
+    aspect-ratio: 2.2/1;
+}
+
+
+
+// Exchange styling --------------------
+.our-exchange-section_{
+    margin-top: 15px;
+}
+
+// indian games
+
+.game-card-wrapper_.indian{
+    width: 150px;
+    height:160px;
+   
+}
+
+.game-card-wrapper_.indian > img{
+    border-radius: 8px;
+}
+
+
+// show cards ---------------
+.game-card-wrapper_.shows{
+    width: 150px;
+    height:250px;
+}
+.game-card-wrapper_.shows > img{
+    border-radius: 8px;
+}

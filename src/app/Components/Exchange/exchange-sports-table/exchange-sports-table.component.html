@@ -1,0 +1,21 @@
+<div class="exchange-sports-table_">
+    <!-- Tale header--------------- -->
+    <div [ngClass]="[ 'sports-table-header_', sportType ]">
+        <div [ngClass]="[ 'sports-name-and-icon_', sportType ]">
+            <div class="sport-icon_">🏏</div>
+            <div [ngClass]="[ 'sport-name_' ]">{{sportType}}</div>
+            <div class="totalMatchesBox_">5</div>
+        </div>
+        <div [ngClass]="[ 'vector-polygon_', sportType ]"></div>
+    </div>
+    <!-- Sports table body----------------- -->
+    <div class="sports-table-body_">
+        <app-matchcard></app-matchcard>
+        <app-matchcard></app-matchcard>
+        <app-matchcard></app-matchcard>
+        <app-matchcard></app-matchcard>
+        <app-matchcard></app-matchcard>
+        <app-matchcard></app-matchcard>
+        <app-matchcard></app-matchcard>
+    </div>
+</div>

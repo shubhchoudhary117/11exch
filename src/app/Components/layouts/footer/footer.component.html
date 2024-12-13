@@ -1,0 +1,74 @@
+<footer class="footer_">
+    <div class="footer-header">
+        <div class="footer-header-left">
+            <img class="side-logo" src="assets/header-icons/Side_Logo.png" alt="">
+        </div>
+        <div class="side-footer-header-right">
+            <div class="links_">
+                <a class="footer-link_" href="#">about</a>
+                <a class="footer-link_" href="#">regulations</a>
+                <a class="footer-link_" href="#">help</a>
+            </div>
+            <div class="player-age_">18+</div>
+        </div>
+    </div>
+    <div class="social-accounts_">
+        <div class="social-heading_">Social Networks</div>
+        <div class="social-actions_">
+            <div class="social-action_ telegram"><img [lazyLoad]="'assets/social-icons/telegramIcon.svg'"
+                    alt="Lazy Loaded Image" class="social-icon_" /></div>
+            <div class="social-action_ instagram"><img [lazyLoad]="'assets/social-icons/instagramIcon.svg'"
+                    alt="Lazy Loaded Image" class="social-icon_" /></div>
+            <div class="social-action_ facebook"> <img [lazyLoad]="'assets/social-icons/facebookIcon.svg'"
+                    alt="Lazy Loaded Image" class="social-icon_" /></div>
+        </div>
+    </div>
+
+    <!-- download app and source code actions ---------------------- -->
+    <div class="download-app-resources_">
+        <div class="resources-container_">
+            <div class="resource_">
+                <a href="#" class="resource-container_">
+                    <div class="resource-left_">
+                        <img class="recource-icon_" src="assets/social-icons/androidIcon.svg" alt="">
+                        <div class="resource-details_">
+                            <div class="download-heading">Download</div>
+                            <div class="resource-type_">android app</div>
+                        </div>
+                    </div>
+                    <div class="resource-right_"><span class="material-icons">keyboard_arrow_right</span></div>
+                </a>
+            </div>
+            <div class="resource_">
+                <a href="#" class="resource-container_">
+                    <div class="resource-left_">
+                        <img class="recource-icon_" src="assets/social-icons/sourceAppIcon.svg" alt="">
+                        <div class="resource-details_">
+                            <div class="download-heading">Download</div>
+                            <div class="resource-type_">source app</div>
+                        </div>
+                    </div>
+                    <div class="resource-right_"><span class="material-icons">keyboard_arrow_right</span></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Platform details------------------------------------- -->
+    <div class="gaming-platform-details_">
+        <img [lazyLoad]="'assets/logos/GcGamingLogo.png'" alt="Lazy Loaded Image" class="gaming-platform-logo_" />
+        <div class="platform-message_">11exch.com is operated by Radon B.V. (Commercial register of Curacao no.126922
+            Emancipatie Boulevard 29, Curacao) under a sublicense CIL pursuant to Master gaming License №5536/JAZ.</div>
+    </div>
+
+    <!-- payment getways -->
+    <div class="payment-getways_">
+        <div *ngFor="let getway of paymentGetways" class="getway_">
+            <img [lazyLoad]="getway.url" alt="Lazy Loaded Image" class="getway-logo_" />
+        </div>
+    </div>
+
+    <!-- copy right -->
+    <div class="copy-right-message_">© 2003 - 2024 11Exch India</div>
+
+</footer>

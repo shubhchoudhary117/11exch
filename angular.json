@@ -7,7 +7,11 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
         }
       },
       "root": "",
@@ -30,6 +34,8 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/material-icons/iconfont/material-icons.css",
+              "node_modules/swiper/swiper-bundle.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -97,5 +103,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "1fa14b12-5ff4-4dd2-bf2c-c5040fd0f851"
   }
 }
